@@ -1,18 +1,17 @@
 [
     {
         "name": "Gale Beef",
-        "image": "images/reef1.jpg",
-        "description": "Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.</p>"
+        "image": "reef1.jpg",
+        "description": "Gales Reef is a vibrant and diverse coral ecosystem located in the Pacific Ocean, teeming with colorful marine life and offering breathtaking underwater landscapes."
     },
     {
         "name": "Dawson’s Beef",
-        "image": "images/reef2.jpg",
-        "description": "Gale Reef Dawson’s Reef Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat. Nunc nisi mi, elementum sit amet aliquet quis, tristique quis nisl. Curabitur odio lacus, blandit ut hendrerit</p>"
+        "image": "reef2.jpg",
+        "description": "Dawson’s Reef is a diverse and intricate underwater ecosystem"
     },
     {
-        "name": "Claire’s Beef",
-        "image": "images/reef3.jpg",
-        "description": "<p>Claire’s Reef Donec sed felis risus. Nulla facilisi. Donec a orci tellus, et auctor odio. Fusce ac orci nibh, quis semper arcu. Cras orci neque, euismod et accumsan ac, sagittis molestie lorem. Proin odio sapien, elementum at tempor non.</p>"
+        "name": "Claire’s Reef",
+        "image": "reef3.jpg",
+        "description": "Claire’s Reef intricate community of coral, fish, and other marine organisms, thriving amidst a framework of calcium carbonate structures."
     }
 ]
-
