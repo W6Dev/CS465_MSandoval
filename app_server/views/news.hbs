@@ -9,36 +9,7 @@
 <body>
 	<div id="background">
 		<div id="page">
-			<div id="header">
-				<div id="logo">
-					<a href="index.html"><img src="images/logo.png" alt="LOGO" height="100" width="200"></a>
-				</div>
-				<div id="navigation">
-					<ul>
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="travel.html">Travel</a>
-						</li>
-						<li>
-							<a href="rooms.html">Rooms</a>
-						</li>
-						<li>
-							<a href="meals.html">Meals</a>
-						</li>
-						<li class="selected">
-							<a href="news.html">News</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			{{> header}}
 			<div id="contents">
 				<div class="box">
 					<div>
@@ -47,37 +18,37 @@
 								<h3>Latest News</h3>
 								<ul>
 									<li>
-										<a href="news.html">2023 Best Beaches Contest Winners</a>
+										<a href="/news">2023 Best Beaches Contest Winners</a>
 									</li>
 									<li>
-										<a href="news.html">Top 10 Diving Spots</a>
+										<a href="/news">Top 10 Diving Spots</a>
 									</li>
 									<li>
-										<a href="news.html">Fishing ban to be implemented this year</a>
+										<a href="/news">Fishing ban to be implemented this year</a>
 									</li>
 									<li>
-										<a href="news.html">Lifeguard saves child from drowning</a>
+										<a href="/news">Lifeguard saves child from drowning</a>
 									</li>
 								</ul>
 								<h3>Vaction Tips</h3>
 								<ul>
 									<li>
-										<a href="news.html">What to bring on the beach?</a>
+										<a href="/news">What to bring on the beach?</a>
 									</li>
 									<li>
-										<a href="news.html">Planning Fun Activities</a>
+										<a href="/news">Planning Fun Activities</a>
 									</li>
 									<li>
-										<a href="news.html">Diving Checklist</a>
+										<a href="/news">Diving Checklist</a>
 									</li>
 									<li>
-										<a href="news.html">First Aid</a>
+										<a href="/news">First Aid</a>
 									</li>
 									<li>
-										<a href="news.html">How to Build a Sand Castle?</a>
+										<a href="/news">How to Build a Sand Castle?</a>
 									</li>
 									<li>
-										<a href="news.html">Tanning Tips</a>
+										<a href="/news">Tanning Tips</a>
 									</li>
 								</ul>
 							</div>
@@ -101,39 +72,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="footer">
-			<div>
-				<ul class="navigation">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="travel.html">Travel</a>
-					</li>
-					<li>
-						<a href="rooms.html">Rooms</a>
-					</li>
-					<li>
-						<a href="meals.html">Meals</a>
-					</li>
-					<li class="active">
-						<a href="news.html">News</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-				<div id="connect">
-					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
-				</div>
-			</div>
-			<p>
-				© 2023 by Travlr Getaways. All Rights Reserved
-			</p>
-		</div>
+		{{> footer}}
 	</div>
 </body>
 </html>
