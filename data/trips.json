@@ -1,17 +1,32 @@
-[
-    {
+{
+   "1": {
+        "code" : "GALR210214",
         "name": "Gale Beef",
+        "length": "4 nights / 5 days",
+        "start": "2021-02-14T08:00:000Z",
+        "resort": "Emerald Bay, 3 stars",
+        "perPerson": "799.00",
         "image": "reef1.jpg",
         "description": "Gales Reef is a vibrant and diverse coral ecosystem located in the Pacific Ocean, teeming with colorful marine life and offering breathtaking underwater landscapes."
     },
-    {
+    "2":{
+        "code" : "DAWR210315",
         "name": "Dawson’s Beef",
+        "length": "4 nights / 5 days",
+        "start": "2021-03-15T08:00:000Z",
+        "resort": "Blue Lagoon, 4 stars",
+        "perPerson": "1199.00",
         "image": "reef2.jpg",
         "description": "Dawson’s Reef is a diverse and intricate underwater ecosystem"
     },
-    {
+    "3":{
+        "code" : "CLAR210416",
         "name": "Claire’s Reef",
+        "length": "4 nights / 5 days",
+        "start": "2021-06-21T08:00:000Z",
+        "resort": "Coral Sands, 5 stars",
+        "perPerson": "1199.00",
         "image": "reef3.jpg",
         "description": "Claire’s Reef intricate community of coral, fish, and other marine organisms, thriving amidst a framework of calcium carbonate structures."
     }
-]
+}
