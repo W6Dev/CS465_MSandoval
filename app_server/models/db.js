@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const host = process.env.DB_HOST || '127.0.0.1';
-const dbURI = `mongodb://localhost:27017/travlr`;
+const dbURI = 'mongodb://localhost:27017/travlr';
 const readLine = require('readline');
 
 // avoid 'current Server Discovery and Monitoring engine is deprecated...'
