@@ -12,5 +12,6 @@ npm start
 
 npm install mongoose@5.9.2
 
-npm install -g seedgoose@2.0.2
+npm install seedgoose@2.0.2
 
+./node_modules/.bin/seedgoose seed
