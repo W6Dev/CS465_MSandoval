@@ -4,16 +4,17 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const hbs = require('hbs');
+require('./app_api/models/db'); // NEW
 
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
-const travelRouter = require('./app_server/routes/travel'); // NEW
-const ContactRouter = require('./app_server/routes/contact'); // NEW
-const AboutRouter = require('./app_server/routes/about'); // NEW
-const MealsRouter = require('./app_server/routes/meals'); // NEW
-const RoomsRouter = require('./app_server/routes/rooms'); // NEW
-const NewsRouter = require('./app_server/routes/news'); // NEW
-
+const travelRouter = require('./app_server/routes/travel'); 
+const ContactRouter = require('./app_server/routes/contact'); 
+const AboutRouter = require('./app_server/routes/about');
+const MealsRouter = require('./app_server/routes/meals'); 
+const RoomsRouter = require('./app_server/routes/rooms'); 
+const NewsRouter = require('./app_server/routes/news'); 
+const apiRouter = require('./app_api/routes/index'); // NEW
 
 var app = express();
 
@@ -40,6 +41,7 @@ app.use('/about', AboutRouter);
 app.use('/meals', MealsRouter); 
 app.use('/rooms', RoomsRouter);
 app.use('/news', NewsRouter);
+app.use('/api', apiRouter); // NEW
 
 
 
