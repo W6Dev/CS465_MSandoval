@@ -1,5 +1,5 @@
 
-Start-Process -FilePath "C:\Program Files\Mozilla Firefox\firefox.exe"  http://localhost:3000
+Start-Process -FilePath "C:\Program Files\Mozilla Firefox\firefox.exe"  http://localhost:4200
 
 cd W:\travlr
 npm start
