@@ -1,6 +1,6 @@
 
 
-cd .\app_admin
+cd W:\travlr\app_admin
 
 ng serve
 
