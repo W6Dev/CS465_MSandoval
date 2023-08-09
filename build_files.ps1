@@ -16,4 +16,4 @@ ng generate component navbar --app
 
 ng generate component navbar --module=app.module
 
-ng generate component home --module=app.module
+ng generate component login --module=app.module

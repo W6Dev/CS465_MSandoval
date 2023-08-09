@@ -12,6 +12,7 @@ import { AddTripComponent } from './add-trip/add-trip.component';
 import { EditTripComponent } from './edit-trip/edit-trip.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,15 @@ import { HomeComponent } from './home/home.component';
     AddTripComponent,
     EditTripComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     ReactiveFormsModule,
-    AppRouterModule    
+    AppRouterModule,
+    FormsModule // new----------------   
   ],
   providers: [
     TripDataService
