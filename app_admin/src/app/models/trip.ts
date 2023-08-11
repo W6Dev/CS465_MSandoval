@@ -1,5 +1,5 @@
 export interface Trip {
-    _id: string, // internal MongoDB primary key
+    _id: string, 
     code: string,
     name: string,
     length: string,

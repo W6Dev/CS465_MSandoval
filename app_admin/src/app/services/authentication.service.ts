@@ -12,25 +12,37 @@ export class AuthenticationService {
     @Inject(BROWSER_STORAGE) private storage: Storage,
     private tripDataService: TripDataService
   ) { }
+  
+
   public getToken(): string {
     return this.storage.getItem('travlr-token');
   }
+
+
   public saveToken(token: string): void {
     this.storage.setItem('travlr-token', token);
   }
+
+
   public login(user: User): Promise<any> {
     return this.tripDataService.login(user)
       .then((authResp: AuthResponse) =>
         this.saveToken(authResp.token));
   }
+
+
   public register(user: User): Promise<any> {
     return this.tripDataService.register(user)
       .then((authResp: AuthResponse) =>
         this.saveToken(authResp.token));
   }
+
+
   public logout(): void {
     this.storage.removeItem('travlr-token');
   }
+
+
   public isLoggedIn(): boolean {
     const token: string = this.getToken();
     if (token) {
@@ -40,6 +52,8 @@ export class AuthenticationService {
       return false;
     }
   }
+
+  
   public getCurrentUser(): User {
     if (this.isLoggedIn()) {
       const token: string = this.getToken();

@@ -16,7 +16,8 @@ export class EditTripComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
-    private tripService: TripDataService
+    private tripService: TripDataService,
+  
   ) { }
 
   ngOnInit() {
@@ -28,6 +29,7 @@ export class EditTripComponent implements OnInit {
       return;
     }
 
+  
     console.log("EditTripComponent#onInit found tripCode " + tripCode);
 
     //initialize form
@@ -64,4 +66,6 @@ export class EditTripComponent implements OnInit {
 
   // get the form short name to access the form fields
   get f() { return this.editForm.controls; }
+
+
 }

@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Headers } from '@angular/http';
 
 import { Trip } from '../models/trip';
 import { User } from '../models/user';
@@ -7,26 +7,37 @@ import { AuthResponse } from '../models/authresponse';
 import { BROWSER_STORAGE } from '../storage';
 
 
-@Injectable()
+@Injectable(
+
+)
+
 
 export class TripDataService {
   constructor(private http: Http,
      @Inject(BROWSER_STORAGE) private storage: Storage) { }
+
+
 
   private apiBaseUrl = 'http://localhost:3000/api/';
   private tripURL = `${this.apiBaseUrl}trips/`;
 
   public addTrip(formData: Trip): Promise<Trip> {
     console.log('Inside TripDataService#addTrip');
+
+    const headers = new Headers({
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${localStorage.getItem("travlr-token")}`,
+    });
+
     return this.http
-      .post(this.tripURL, formData)
+      .post(this.tripURL, formData, {headers: headers})
       .toPromise()
       .then(response => response.json() as Trip)
       .catch(this.handleError);
   }
 
   public getTrip(tripCode: string): Promise<Trip> {
-    console.log('Inside TripDataService#getTrip(tripCode');
+    console.log('Inside TripDataService#getTrip(tripCode)');
     return this.http
       .get(this.tripURL + tripCode)
       .toPromise()
@@ -46,8 +57,14 @@ export class TripDataService {
   public updateTrip(formData: Trip): Promise<Trip> {
     console.log('Inside TripDataService#updateTrip');
     console.log(formData);
+
+    const headers = new Headers({
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${localStorage.getItem("travlr-token")}`,
+    });
+    
     return this.http
-      .put(this.tripURL + formData.code, formData)
+      .put(this.tripURL + formData.code, formData, {headers: headers})
       .toPromise()
       .then(response => response.json() as Trip[])
       .catch(this.handleError);
